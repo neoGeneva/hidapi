@@ -1042,6 +1042,10 @@ HID_API_EXPORT const wchar_t * HID_API_CALL  hid_error(hid_device *dev)
 	return NULL;
 }
 
+int32_t HID_API_EXPORT_CALL hid_get_max_report_length(hid_device *dev)
+{
+	return get_max_report_length(dev->device_handle);
+}
 
 
 
